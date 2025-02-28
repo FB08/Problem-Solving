@@ -1,4 +1,4 @@
-# Hyeonseok님 개선코드? 분석 해보야함
+# Hyeonseok님 SCC 참고
 
 import sys
 from collections import deque
