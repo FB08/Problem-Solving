@@ -35,7 +35,7 @@ class SCC: # 완전 연결 요소(Strong Connected Component)
                 result = min(result, self.dfs(nv)) # result를 nv의 연결요소와 vertex의 연결요소중 가장 작은 값의 인덱스(=가장 큰 범위의 인덱스)로 설정
             elif not self.finished[nv]: # nv의 dfs가 시작되었으나 끝나지 않았으면(=아직 dfsn[nv]가 최소인지 알 수 없음)
                 # 양방향 또는 cycle을 형성함을 의미한다. a가 b를 호출했고 중간 과정을 거쳐 결과적으로 b가 다시 a를 호출함을 의미
-                # =a와 b가 연결되어있는 사람은 같다.
+                # = a와 b가 방문할할 수 있는 정점은 같다.
                 result = min(result, self.dfsn[nv]) # 따라서 일단 현재의 인덱스를 비교한다. 어차피 a가 갈곳은 b도 가기에 정확한 값을 알지 않아도 된다.
 
         
