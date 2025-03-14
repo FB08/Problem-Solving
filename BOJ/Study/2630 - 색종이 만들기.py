@@ -24,3 +24,6 @@ def solution():
     sys.stdout.write('\n'.join(map(str, ans)))
 
 solution()
+
+# 첫 제출 코드와는 다르게 sum을 이용하지 않아서 온전히 분할정복으로 문제를 해결함
+# 불필요한 재귀 호출을 줄였으며 시간복잡도 O(n)
